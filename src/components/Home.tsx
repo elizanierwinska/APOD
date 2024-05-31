@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 
 export default function Home(){
   const [data, setData] = useState<any>()
-  console.log(new Date().toLocaleDateString('en-CA').split('T')[0])
 
   const fetchData = () => {
     const apiKey: String = "NPzkN3QlcDnfIngrGKC7YuibZ7XmrSzPt2gQYFXd";
@@ -15,11 +14,12 @@ export default function Home(){
   }, [])
 console.log(data)
 
-  return data ? <div>
+  return data ? <div className="container">
+      <h1>Astronomy Picture of the Day</h1>
+      <h2>{data.title}</h2>
       <img className="universe-img" src={data.url} alt="..."/>
       <div>
         <p>{data.date}</p>
-        <h4>{data.title}</h4>
         <p>Copyright: {data.copyright}</p>
         <p>{data.explanation}</p>
       </div>
