@@ -47,6 +47,12 @@
   padding-right: var(--padding);
 }
 
+.loader {
+  min-height: var(--height);
+  margin-top: 50px;
+  text-align: center;
+}
+
 @media (max-width: 1470px){
   .container{
     flex-direction: column;

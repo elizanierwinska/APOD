@@ -42,5 +42,5 @@ export default function Home(){
         <p>{data.explanation}</p>
       </div>
     </div> :
-    <h2>Loading...</h2>
+    <h2 className="loader">Loading...</h2>
 }

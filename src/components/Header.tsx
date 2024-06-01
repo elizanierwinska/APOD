@@ -7,7 +7,7 @@ export default function Header() {
       <h1 className="page-title">Astronomy Picture of the Day</h1>
       <h1 className="small-screen-title">APOD</h1>
     </Link>
-    <NavLink className="button" to="/gallery">
+    <NavLink className="gallery-link" to="/gallery">
       <p>See gallery</p>
     </NavLink>
   </div>
