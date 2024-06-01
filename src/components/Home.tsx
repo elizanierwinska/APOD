@@ -9,7 +9,7 @@ export default function Home(){
 
   const fetchData = () => {
     const apiKey: String = "NPzkN3QlcDnfIngrGKC7YuibZ7XmrSzPt2gQYFXd";
-    fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`).then(response => response.json()).then(data => setData(data))
+    fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}&count`).then(response => response.json()).then(data => setData(data))
   }
 
   useEffect(()=> {
@@ -23,19 +23,19 @@ export default function Home(){
   console.log(data)
 
   return data ? <div className="container">
-      <h2>{data.title}</h2>
       {data.media_type === "image" ?
-      <img className="universe-img" src={data.url} alt="..."/> : data.media_type === "video" ? <iframe className="youtube-video" width="80%" src={data.url} title="Apod" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> :
+      <img className="universe-img" src={data.url} alt="..."/> : data.media_type === "video" ? <iframe className="youtube-video" src={data.url} title="Apod" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> :
      <p>Sorry, the media you are searching for is not found. Please pick another date</p>}
-      <div>
+      <div className="description">
+        <h2 className="img-title">{data.title}</h2>
         <input 
+          className="date-picker"
           type="date" 
           onChange={handleChange}
           value={date}
           max={today}
           min="1995-06-16"
         />
-        <p>{data.date}</p>
         <p>{data.explanation}</p>
       </div>
     </div> :
