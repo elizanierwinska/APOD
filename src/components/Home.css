@@ -1,10 +1,11 @@
 .container{
+  min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 5% 0;
+  padding-bottom: 5%;
 }
 
 .youtube-video {
@@ -58,7 +59,7 @@
 }
 
 @media (max-width: 700px) {
-  .youtube-video {
+    .youtube-video {
     width: 100%;
   }
 }
