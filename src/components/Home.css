@@ -1,23 +1,21 @@
 .container{
-  min-height: 100vh;
-  position: relative;
+  min-height: var(--height);
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding-bottom: 5%;
+  padding-bottom: var(--padding);
 }
 
 .youtube-video {
   aspect-ratio: 16 / 10;
-  padding: 20px;
+  padding: var(--padding);
   width: 80%;
 }
 
 .universe-img {
   max-width: 100%;
   max-height: 100vh;
-  padding: 20px;
+  padding: var(--padding);
 }
 
 .description {
@@ -29,11 +27,24 @@
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 20px;
-  border-color: lightblue;
+  border-color: var(--font-color);
   background-color: rgb(37, 37, 37);
   font-family: "Space Mono", monospace; 
   font-weight: bold;
-  color:lightblue;
+  color: var(--font-color);
+}
+
+.date-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.date-container > p{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  padding-right: var(--padding);
 }
 
 @media (max-width: 1470px){
@@ -51,10 +62,8 @@
   .img-title {
     text-align: center;
   }
-  .date-picker {
-    display: block;
-   margin-left: auto;
-   margin-right: auto;
+  .date-container {
+    justify-content: center;
   }
 }
 

@@ -1,6 +1,6 @@
 a.active {
   color:rgb(252, 252, 167);
-  text-shadow: lightblue 1px 1px 10px;
+  text-shadow: var(--font-color) 1px 1px 10px;
   text-decoration: underline;
   text-decoration-color: rgb(252, 252, 167);
 }
@@ -17,30 +17,30 @@ a {
   justify-content: space-between;
 }
 
-.page-title {
+.page-title{
   margin:0;
-  font-size: 40px;
-  text-shadow: rgb(252, 252, 167)1px 1px 10px;
-  color:lightblue;
+  font-size: var(--header-font-size);
+  text-shadow: var(--text-shadow);
+  color: var(--font-color);
   padding: 20px 30px;
 }
 
 .small-screen-title{
   display: none;
   margin: 0;
-  font-size: 40px;
-  text-shadow: rgb(252, 252, 167) 1px 1px 10px;
-  color:lightblue;
+  font-size: var(--header-font-size);
+  text-shadow: var(--text-shadow);
+  color:var(--font-color);
   padding: 20px 30px;
 }
 
 .button {
   margin: 20px 30px;
   padding: 0 10px;
-  color: lightblue;
-  text-shadow: rgb(252, 252, 167) 1px 1px 10px;
+  color: var(--font-color);
+  text-shadow: var(--text-shadow);
   text-decoration: underline;
-  text-decoration-color: lightblue;
+  text-decoration-color: var(--font-color);
 }
 
 @media (max-width: 1470px) {

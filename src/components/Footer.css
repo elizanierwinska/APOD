@@ -1,10 +1,11 @@
 footer > p {
   text-align: center;
   font-weight: bold;
+  text-shadow: var(--text-shadow);
 }
 
 footer > hr {
-  border: 0.5px solid lightblue;
+  border: 0.5px solid var(--font-color);
   width: 80%;
 }
 

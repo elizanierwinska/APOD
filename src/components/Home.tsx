@@ -28,14 +28,17 @@ export default function Home(){
      <p>Sorry, the media you are searching for is not found. Please pick another date</p>}
       <div className="description">
         <h2 className="img-title">{data.title}</h2>
-        <input 
-          className="date-picker"
-          type="date" 
-          onChange={handleChange}
-          value={date}
-          max={today}
-          min="1995-06-16"
-        />
+        <div className="date-container">
+          <p>Date: </p>
+          <input 
+            className="date-picker"
+            type="date" 
+            onChange={handleChange}
+            value={date}
+            max={today}
+            min="1995-06-16"
+          />
+        </div>
         <p>{data.explanation}</p>
       </div>
     </div> :
