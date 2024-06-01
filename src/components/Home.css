@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.youtube-video {
+  aspect-ratio: 16 / 10;
+}
+
 .universe-img {
   width: 60%;
   overflow: clip;

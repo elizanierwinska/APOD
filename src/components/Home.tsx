@@ -23,9 +23,10 @@ export default function Home(){
   console.log(data)
 
   return data ? <div className="container">
-      <h1>Astronomy Picture of the Day</h1>
       <h2>{data.title}</h2>
-      <img className="universe-img" src={data.url} alt="..."/>
+      {data.media_type === "image" ?
+      <img className="universe-img" src={data.url} alt="..."/> : data.media_type === "video" ? <iframe className="youtube-video" width="80%" src={data.url} title="Apod" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> :
+     <p>Sorry, the media you are searching for is not found. Please pick another date</p>}
       <div>
         <input 
           type="date" 

@@ -7,6 +7,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <h1>Astronomy Picture of the Day</h1>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
