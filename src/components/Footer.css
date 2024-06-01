@@ -1,0 +1,9 @@
+footer > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+footer > hr {
+  border: 0.5px solid lightblue;
+  width: 80%;
+}
