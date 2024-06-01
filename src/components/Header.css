@@ -1,0 +1,31 @@
+.header-container{
+  height: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title {
+  margin:0;
+  font-size: 40px;
+  text-shadow: rgb(252, 252, 167) 1px 1px 10px;
+  padding: 20px;
+}
+
+.small-screen-title{
+  display: none;
+  margin: 0;
+  font-size: 40px;
+  text-shadow: rgb(252, 252, 167) 1px 1px 10px;
+  padding: 20px;
+}
+
+@media (max-width: 1470px) {
+  .page-title{
+    display: none;
+  }
+  .small-screen-title{
+    display: block;
+  }
+}
