@@ -1,3 +1,14 @@
+a.active {
+  color:rgb(252, 252, 167);
+  text-shadow: lightblue 1px 1px 10px;
+  text-decoration: underline;
+  text-decoration-color: rgb(252, 252, 167);
+}
+
+a {
+  text-decoration: none;
+}
+
 .header-container{
   height: 5%;
   width: 100%;
@@ -9,8 +20,9 @@
 .page-title {
   margin:0;
   font-size: 40px;
-  text-shadow: rgb(252, 252, 167) 1px 1px 10px;
-  padding: 20px;
+  text-shadow: rgb(252, 252, 167)1px 1px 10px;
+  color:lightblue;
+  padding: 20px 30px;
 }
 
 .small-screen-title{
@@ -18,7 +30,17 @@
   margin: 0;
   font-size: 40px;
   text-shadow: rgb(252, 252, 167) 1px 1px 10px;
-  padding: 20px;
+  color:lightblue;
+  padding: 20px 30px;
+}
+
+.button {
+  margin: 20px 30px;
+  padding: 0 10px;
+  color: lightblue;
+  text-shadow: rgb(252, 252, 167) 1px 1px 10px;
+  text-decoration: underline;
+  text-decoration-color: lightblue;
 }
 
 @media (max-width: 1470px) {
