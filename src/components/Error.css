@@ -1,0 +1,17 @@
+.error{
+  min-height: var(--height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #009AF7;
+  text-shadow: 1px 1px 10px red;
+  margin: 10% 30px;
+}
+
+.error > .instructions{
+  font-size: 18px;
+  color: var(--second-font-color);
+  text-shadow: 2px 2px 20px white;
+  font-style: italic;
+  font-weight: bold;
+}

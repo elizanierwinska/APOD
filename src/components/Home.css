@@ -61,22 +61,6 @@
   text-shadow: 1px 1px 10px red;
 }
 
-.error{
-  min-height: var(--height);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #009AF7;
-  text-shadow: 1px 1px 10px red;
-  margin: 10% 30px;
-}
-
-.error > .instructions{
-  color: rgb(252, 252, 167);
-  font-style: italic;
-  font-weight: bold;
-}
-
 @media (max-width: 1470px){
   .container{
     flex-direction: column;

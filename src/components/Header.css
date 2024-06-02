@@ -1,8 +1,8 @@
 a.active {
-  color:rgb(252, 252, 167);
+  color: var(--second-font-color);
   text-shadow: var(--font-color) 1px 1px 10px;
   text-decoration: underline;
-  text-decoration-color: rgb(252, 252, 167);
+  text-decoration-color: var(  --second-font-color)
 }
 
 a {

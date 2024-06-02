@@ -1,7 +1,8 @@
 :root {
   --font-color: lightblue;
+  --second-font-color: rgb(252, 252, 167);
   --font-family: "Space Mono", monospace;
-  --text-shadow: rgb(252, 252, 167)1px 1px 10px;
+  --text-shadow: rgb(252, 252, 167) 1px 1px 10px;
   --header-font-size: 40px;
   --padding: 20px;
   --height: 100vh;
