@@ -4,10 +4,9 @@ import axios from "axios";
 import { FetchedData } from "../types";
 import Error from "./Error"
 
-export default function Home(){
-  let today = new Date().toLocaleDateString('en-CA');
+export default function Home(today: any){
   const [data, setData] = useState<FetchedData | any>();
-  const [date, setDate] = useState<string>(today);
+  const [date, setDate] = useState<string>(today.today);
   const [error, setError] = useState(null)
 
   useEffect(()=> {
