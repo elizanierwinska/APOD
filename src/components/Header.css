@@ -2,7 +2,7 @@ a.active {
   color: var(--second-font-color);
   text-shadow: var(--font-color) 1px 1px 10px;
   text-decoration: underline;
-  text-decoration-color: var(  --second-font-color)
+  text-decoration-color: var(  --second-font-color);
 }
 
 a {

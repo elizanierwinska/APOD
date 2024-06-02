@@ -6,3 +6,7 @@ export interface FetchedData {
   title: string;
   url: string
 }
+
+export interface Props {
+  today: string;
+}

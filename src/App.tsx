@@ -6,14 +6,14 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
 function App() {
-  const today = new Date().toISOString().split('T')[0];
+  let today: string = new Date().toISOString().split('T')[0];
 
   return (
     <Router>
       <Header />
       <Routes>
       <Route path="/" element={<Home today={today}/>} />
-      <Route path="/gallery" element={<Gallery endDate={today}/>} />
+      <Route path="/gallery" element={<Gallery today={today}/>} />
       </Routes>
       <Footer />
     </Router>
