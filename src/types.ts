@@ -1,11 +1,4 @@
-export interface FetchedData {
-  date: string;
-  explanation: string;
-  media_type: string;
-  service_version: string;
-  title: string;
-  url: string
-}
+export type FetchedData = Record<'date' | "explanation" | "media_type" | "service_version" | "title" | "url", string>
 
 export interface Props {
   today: string;

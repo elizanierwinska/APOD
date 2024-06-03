@@ -17,6 +17,7 @@ export default function Home({today}: Props){
 
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //set the date to the date from the input field 
     setDate(event.target.value);
   }
   
@@ -40,7 +41,7 @@ export default function Home({today}: Props){
             onChange={handleChange}
             value={date}
             min="1995-06-16"
-            // max={today}
+            max={today}
           />
         </div>
         <p>{data.explanation}</p>

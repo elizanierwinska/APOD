@@ -6,6 +6,7 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
 function App() {
+  //Converts date to "yyyy-mm-dd" format
   let today: string = new Date().toISOString().split('T')[0];
 
   return (

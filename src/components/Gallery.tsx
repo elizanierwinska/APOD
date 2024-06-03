@@ -9,9 +9,10 @@ export default function Gallery({today}: Props) {
   const [error, setError] = useState(null);
 
   useEffect(()=> {
-    let randomDate: Date  = new Date()
-    randomDate.setDate(randomDate.getDate() - (Math.random() * (30 - 7) + 7))
-    let startDate: string = randomDate.toISOString().split('T')[0]
+    let date: Date  = new Date()
+    //Substract a random number between 7 and 30 from today to get a number of photos in range 7-30
+    date.setDate(date.getDate() - (Math.random() * (30 - 7) + 7))
+    let startDate: string = date.toISOString().split('T')[0]
     const apiKey: string = "NPzkN3QlcDnfIngrGKC7YuibZ7XmrSzPt2gQYFXd";
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${today}`).then(data => setData(data.data)).catch(error => setError(error.toJSON()));
   }, [today])
