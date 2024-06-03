@@ -35,7 +35,6 @@
 }
 
 .date-container {
-  width: 100%;
   display: flex;
   justify-content: flex-start;
 }
@@ -45,6 +44,29 @@
   font-style: italic;
   font-size: 18px;
   padding-right: var(--padding);
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-inputs {
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.flex > p {
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 .loader {
@@ -62,6 +84,12 @@
 }
 
 @media (max-width: 1470px){
+  .input-fields {
+    margin-bottom: 5%;
+  }
+  .flex {
+    margin: 5px;
+  }
   .container{
     flex-direction: column;
   }
@@ -84,6 +112,9 @@
 @media (max-width: 700px) {
     .youtube-video {
     width: 100%;
+  }
+  .flex-inputs {
+    flex-direction: column
   }
 }
 
