@@ -2,7 +2,7 @@ import axios from "axios";
 import { Dispatch, SetStateAction } from "react";
 import { date, FetchedData } from "./types";
 
-export default function fetchData(date: date, setData:Dispatch<SetStateAction<FetchedData | FetchedData[] | any>>, setError: Dispatch<SetStateAction<FetchedData | FetchedData[] | any>>): {} | void {
+export function fetchData(date: date, setData:Dispatch<SetStateAction<FetchedData | FetchedData[] | any>>, setError: Dispatch<SetStateAction<FetchedData | FetchedData[] | any>>): {} | void {
   const apiKey: string = "NPzkN3QlcDnfIngrGKC7YuibZ7XmrSzPt2gQYFXd";
   let url: string=`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
   let photoRequest: string = `&date=${date.date}`

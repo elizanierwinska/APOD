@@ -15,5 +15,5 @@ export interface Props {
   data: FetchedData | FetchedData[] | any;
   setData: Dispatch<SetStateAction<FetchedData | FetchedData[] | any>>;
   error: any;
-  setError: Dispatch<SetStateAction<any>>
+  setError: Dispatch<SetStateAction<any>>,
 }
