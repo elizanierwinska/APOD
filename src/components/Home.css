@@ -34,6 +34,18 @@
   color: var(--font-color);
 }
 
+.count{
+  text-align: end;
+  padding: 10px 20px;
+  width: 100px;
+  border-radius: 20px;
+  border-color: var(--font-color);
+  background-color: rgb(37, 37, 37);
+  font-family: "Space Mono", monospace; 
+  font-weight: bold;
+  color: var(--font-color);
+}
+
 .date-container {
   display: flex;
   justify-content: flex-start;

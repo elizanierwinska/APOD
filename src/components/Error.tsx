@@ -1,6 +1,7 @@
 import "./Error.css";
 
 export default function Error({error}: any) { 
+  console.log(error)
     return <div className="error">
       <h1>Error {error.status}</h1>
       <h2>{error.message}</h2>
