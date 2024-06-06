@@ -1,38 +1,4 @@
-.count{
-  text-align: end;
-  padding: 10px 20px;
-  width: 100px;
-  border-radius: 20px;
-  border-color: var(--font-color);
-  background-color: rgb(37, 37, 37);
-  font-family: "Space Mono", monospace; 
-  font-weight: bold;
-  color: var(--font-color);
-}
 
-
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.flex-inputs {
-  display: flex;
-  align-items: center;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.flex > p {
-  font-weight: bold;
-  margin-right: 5px;
-}
 
 .loader {
   min-height: var(--height);

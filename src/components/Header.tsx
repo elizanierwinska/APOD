@@ -1,7 +1,8 @@
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { headerProps } from "../types";
 
-export default function Header({today, date, setDate, setData}: any) {
+export default function Header({today, date, setDate, setData}: headerProps) {
+  console.log(typeof(today))
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     //set the date to the date from the input field 
@@ -42,12 +43,10 @@ export default function Header({today, date, setDate, setData}: any) {
     }
   }
 
-  return <div className="header-container">
+  return <div>
     <div className="header-container">
-      <Link to="/">
         <h1 className="page-title">Astronomy Picture of the Day</h1>
         <h1 className="small-screen-title">APOD</h1>
-      </Link>
     </div>
     <div className="input-fields">
           <div className="flex-inputs">
