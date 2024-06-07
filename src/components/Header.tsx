@@ -14,6 +14,7 @@ export default function Header({today, date, setDate, setData}: headerProps) {
           count: ""
         }
       )
+      setData(null);
     }else if (event.target.name === "startDate"){
       setDate((prev: any) => {
           return {
@@ -32,7 +33,6 @@ export default function Header({today, date, setDate, setData}: headerProps) {
         }});
       setData(null);
     } else {
-      setData(null);
       setDate(() => {
         return {
           date: "",
@@ -40,6 +40,7 @@ export default function Header({today, date, setDate, setData}: headerProps) {
           endDate: "",
           count: event.target.value
         }});
+      setData(null);
     }
   }
 

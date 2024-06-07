@@ -1,8 +1,3 @@
-
-a {
-  text-decoration: none;
-}
-
 .header-container{
   height: 5%;
   width: 100%;
@@ -28,6 +23,29 @@ a {
   padding: 20px 0 20px 30px;
 }
 
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-inputs {
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.flex > p {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
 @media (max-width: 1470px) {
   .page-title{
     display: none;
@@ -35,4 +53,18 @@ a {
   .small-screen-title{
     display: block;
   }
+  .input-fields {
+    margin-bottom: 5%;
+  }
+  .flex {
+    margin: 5px;
+  }
 }
+
+@media (max-width: 700px) {
+  .flex-inputs {
+    flex-direction: column
+  }
+}
+
+::-webkit-inner-spin-button { display: none; }

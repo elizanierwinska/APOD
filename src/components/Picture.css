@@ -65,3 +65,9 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 700px) {
+  .youtube-video {
+    width: 100%;
+  }
+}

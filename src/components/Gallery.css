@@ -1,3 +1,23 @@
+.gallery{
+  min-height: var(--height);
+  margin-top: 20px;
+  margin-bottom: 5%;
+  line-height: 0;  
+  column-count: 3;    
+  column-gap: 0px;    
+  display:inline-block;    
+}
+
+.gallery > img {
+  width: 100%;    
+  height: auto;  
+}
+
+#youtube-video {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+}
+
 .count{
   text-align: end;
   padding: 10px 20px;
@@ -11,25 +31,20 @@
 }
 
 
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+@media (max-width: 1000px) {
+  .gallery {
+    column-count: 3;
+  }
 }
 
-.flex-inputs {
-  display: flex;
-  align-items: center;
+@media (max-width: 800px) {
+  .gallery {
+    column-count: 2;
+  }
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.flex > p {
-  font-weight: bold;
-  margin-right: 5px;
+@media (max-width: 500px) {
+  .gallery {
+    column-count: 1;
+  }
 }
