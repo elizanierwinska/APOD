@@ -1,0 +1,19 @@
+.flex-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-family);
+  background-color: rgb(17, 17, 17);
+  color: var(--font-color);
+  font-size: 15px;
+  border: none;
+}

@@ -11,7 +11,7 @@
   font-size: var(--header-font-size);
   text-shadow: var(--text-shadow);
   color: var(--font-color);
-  padding: 20px 30px;
+  padding: 20px 0px;
 }
 
 .small-screen-title{
@@ -20,7 +20,7 @@
   font-size: var(--header-font-size);
   text-shadow: var(--text-shadow);
   color:var(--font-color);
-  padding: 20px 0 20px 30px;
+  padding: 20px 0;
 }
 
 .input-fields {
@@ -44,6 +44,14 @@
 .flex > p {
   font-weight: bold;
   margin-right: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--second-font-color);
+  margin: 20px 10px;
 }
 
 @media (max-width: 1470px) {

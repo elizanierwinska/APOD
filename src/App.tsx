@@ -3,14 +3,15 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Header from './components/Header';
 import Home from "./components/Home";
 import Footer from './components/Footer';
-import { FetchedData } from "./types";
+import { FetchedData, date } from "./types";
+import { AxiosError } from 'axios';
 
 function App() {
   //Converts date to "yyyy-mm-dd" format
   let today: string = new Date().toISOString().split('T')[0];
   const [data, setData] = useState<FetchedData | FetchedData[] | any>();
-  const [error, setError] = useState(null);
-  const [date, setDate] = useState({
+  const [error, setError] = useState<AxiosError | null>(null);
+  const [date, setDate] = useState<date>({
     date: today,
     startDate: "",
     endDate: "",
