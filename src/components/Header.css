@@ -48,6 +48,8 @@
 
 .date-picker {
   cursor: pointer;
+  font-size: 13.5px;
+  height: 22px;
 }
 
 .flex-inputs {
