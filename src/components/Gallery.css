@@ -1,35 +1,22 @@
-.gallery{
+.gallery {
   min-height: var(--height);
   margin-top: 20px;
   margin-bottom: 5%;
-  line-height: 0;  
-  column-count: 3;    
-  column-gap: 0px;    
-  display:inline-block;    
+  line-height: 0;
+  column-count: 3;
+  column-gap: 0px;
+  display: inline-block;
 }
 
 .gallery > img {
-  width: 100%;    
-  height: auto;  
+  width: 100%;
+  height: auto;
 }
 
 #youtube-video {
   width: 100%;
   aspect-ratio: 16 / 10;
 }
-
-.count{
-  text-align: end;
-  padding: 10px 20px;
-  width: 100px;
-  border-radius: 20px;
-  border-color: var(--font-color);
-  background-color: rgb(37, 37, 37);
-  font-family: "Space Mono", monospace; 
-  font-weight: bold;
-  color: var(--font-color);
-}
-
 
 @media (max-width: 1000px) {
   .gallery {

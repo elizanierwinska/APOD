@@ -101,7 +101,7 @@ export default function Header({ today, date, setDate, setData }: headerProps) {
           <div className="flex">
             <p>Count:</p>
             <input
-              className="date-picker"
+              className="count"
               type="number"
               name="count"
               onChange={handleChange}

@@ -1,4 +1,4 @@
-.container{
+.container {
   min-height: 80vh;
   display: flex;
   flex-direction: row;
@@ -23,23 +23,12 @@
   width: 50%;
 }
 
-.date-picker {
-  cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 20px;
-  border-color: var(--font-color);
-  background-color: rgb(37, 37, 37);
-  font-family: "Space Mono", monospace; 
-  font-weight: bold;
-  color: var(--font-color);
-}
-
 .date-container {
   display: flex;
   justify-content: flex-start;
 }
 
-.date-container > p{
+.date-container > p {
   font-weight: bold;
   font-style: italic;
   font-size: 18px;
@@ -47,15 +36,15 @@
 }
 
 @media (max-width: 1470px) {
-  .container{
+  .container {
     flex-direction: column;
-    margin-top: 3%
+    margin-top: 3%;
   }
   .description {
     width: 90%;
     padding: 0;
   }
-  .universe-img{
+  .universe-img {
     padding: 0;
     margin: 0;
   }
