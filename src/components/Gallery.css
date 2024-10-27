@@ -1,6 +1,8 @@
 .gallery {
   min-height: var(--height);
+  max-height: 100%;
   margin-top: 20px;
+  overflow: hidden;
   margin-bottom: 5%;
   line-height: 0;
   column-count: 3;
@@ -18,11 +20,11 @@
   aspect-ratio: 16 / 10;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .gallery {
     column-count: 3;
   }
-}
+} */
 
 @media (max-width: 800px) {
   .gallery {

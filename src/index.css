@@ -1,14 +1,15 @@
 :root {
   --font-color: lightblue;
   --second-font-color: rgb(252, 252, 167);
-  --font-family: "Space Mono", monospace;
+  --font-family: 'Space Mono', monospace;
   --text-shadow: rgb(252, 252, 167) 1px 1px 10px;
   --header-font-size: 40px;
   --padding: 20px;
   --height: 100vh;
 }
 
-body{
+body {
+  height: var(--height);
   margin: 0;
   padding: 0;
   background-color: rgb(17, 17, 17);
